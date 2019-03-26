@@ -25,6 +25,7 @@ import MergeEditing from '@amazee/ckeditor5-template/src/mergeediting';
 
 import Placeholder from '@amazee/editor-components/components/placeholder/placeholder';
 
+import Media from '@amazee/editor-components/components/media/media';
 import '@amazee/editor-components/components/container/container';
 import '@amazee/editor-components/components/gallery/gallery';
 import '@amazee/editor-components/components/tabs/tabs';
@@ -38,6 +39,7 @@ class PlaceholderConfig extends Plugin {
 		const templates = this.editor.config.get( 'templates' );
 		Placeholder.availableSections = Object.keys( templates )
 			.map( id => ( { id, label: templates[ id ].label, icon: templates[ id ].icon } ) );
+		Media.previewCallback = this.editor.config.get( 'drupalMediaRenderer' ).callback;
 	}
 }
 
