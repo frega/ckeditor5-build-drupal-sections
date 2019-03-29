@@ -173,6 +173,9 @@ SectionsEditor.defaultConfig = {
 	drupalMediaSelector: { callback: ( type, operation, callback ) => {
 		callback( operation === 'add' ? '300' : '400' );
 	} },
+	drupalEntitySelector: { callback: ( type, operation, callback ) => {
+		callback( operation === 'add' ? '100' : '200' );
+	} },
 	drupalMediaRenderer: { callback: ( uuid, display, callback ) => {
 		window.setTimeout( () => {
 			callback( `<img src="https://picsum.photos/800/${ uuid }"/>` );
