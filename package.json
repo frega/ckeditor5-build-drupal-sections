@@ -25,13 +25,11 @@
     "build"
   ],
   "dependencies": {
-    "@amazee/editor-components": "https://github.com/frega/editor-components.git"
+    "@amazee/editor-components": "https://github.com/AmazeeLabs/editor-components.git"
   },
   "devDependencies": {
-    "@amazee/ckeditor5-drupal-linkit": "^0.0.14",
-    "@amazee/ckeditor5-drupal-media": "^0.0.20",
-    "@amazee/ckeditor5-template": "^0.0.27",
-    "@amazee/editor-components": "https://github.com/frega/editor-components.git",
+    "@amazee/ckeditor5-template": "^0.0.28",
+    "@amazee/editor-components": "https://github.com/AmazeeLabs/editor-components.git",
     "@ckeditor/ckeditor5-autoformat": "^11.0.0",
     "@ckeditor/ckeditor5-basic-styles": "^11.0.0",
     "@ckeditor/ckeditor5-block-quote": "^11.0.0",
